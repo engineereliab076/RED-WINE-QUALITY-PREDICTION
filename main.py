@@ -1,3 +1,3 @@
-from RED-WINE-QUALITY-PREDICTION import logger
+from Red_wine import logger
 
 logger.info("my loggings")
