@@ -19,6 +19,9 @@ def training():
     os.system("python main.py")
     return "Training Successful!" 
 
+
+
+
 @app.route('/predict',methods=['POST','GET']) # route to show the predictions in a web UI
 def index():
     if request.method == 'POST':
@@ -51,7 +54,8 @@ def index():
 
     else:
         return render_template('index.html')
-    
+
+
 
 if __name__ == "__main__":
-        app.run(host="0.0.0.0", port = 8080)
+	app.run(host="0.0.0.0", port = 8080)
